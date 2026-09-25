@@ -1,0 +1,47 @@
+🎯 Practical 1 — COMPLETE COMMAND SHEET
+
+These are the commands we've covered:
+
+ipconfig
+
+Purpose: View IP configuration.
+
+ipconfig /all
+
+Purpose: Detailed IP/network configuration.
+
+ping 127.0.0.1
+
+Purpose: Test connectivity to your own computer.
+
+ping example.com
+
+Purpose: Test connectivity to a domain.
+
+nslookup example.com
+
+Purpose: Query DNS information.
+
+tracert example.com
+
+Purpose: Trace the network route.
+
+netstat
+
+Purpose: View network connections/status.
+
+netstat -ano
+
+Purpose: View connections with process IDs.
+
+systeminfo
+
+Purpose: View Windows system information.
+
+nmap 127.0.0.1
+
+Purpose: Scan your own machine for TCP ports/services.
+
+nmap -sn 127.0.0.1
+
+Purpose: Host discovery/ping scan.
