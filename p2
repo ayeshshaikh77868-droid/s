@@ -1,0 +1,51 @@
+1. Open CrypTool
+
+2. Caesar Cipher
+   ↓
+   Symmetric (classic)
+   ↓
+   Caesar
+
+3. Enter plaintext
+   Example:
+   HELLO
+
+4. Set shift:
+   3
+
+5. Click Encrypt
+
+6. Observe ciphertext:
+   KHOOR
+
+7. Click Decrypt
+
+8. Verify:
+   HELLO
+
+9. Open Playfair
+
+10. Enter plaintext/key according to
+    the CrypTool exercise
+
+11. Encrypt
+
+12. Record ciphertext
+
+13. Decrypt
+
+14. Verify original plaintext
+
+15. Open Vernam
+
+16. Enter plaintext
+
+17. Enter key
+
+18. Encrypt
+
+19. Record ciphertext
+
+20. Decrypt
+
+21. Verify original plaintext
