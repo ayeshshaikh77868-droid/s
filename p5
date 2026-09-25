@@ -1,0 +1,66 @@
+PART 18 — COMPLETE PRACTICAL PROCEDURE
+
+Here's the full practical flow.
+
+1. Open Kali Linux
+        ↓
+2. Open Terminal
+        ↓
+3. Check user
+        ↓
+4. Check IP/interface
+        ↓
+5. Install/check Hping3
+        ↓
+6. Open Wireshark
+        ↓
+7. Start capture
+        ↓
+8. Send a small number of packets
+   to localhost
+        ↓
+9. Stop/observe capture
+        ↓
+10. Apply TCP/SYN filters
+        ↓
+11. Analyze packets
+        ↓
+12. Study LOIC concept
+        ↓
+13. Understand DoS vs DDoS
+PART 19 — COMPLETE COMMAND SHEET TO MEMORIZE
+Kali
+whoami
+ip addr
+sudo apt update
+sudo apt install hping3
+hping3 --help
+Connectivity
+ping 127.0.0.1
+Safe Hping test
+sudo hping3 -c 5 127.0.0.1
+Controlled TCP SYN test
+sudo hping3 -c 5 -S -p 80 127.0.0.1
+Wireshark
+tcp
+tcp.flags.syn == 1
+tcp.flags.reset == 1
+ip.addr == 127.0.0.1
+tcp.port == 80
+ip.addr == 127.0.0.1 && tcp.flags.syn == 1
+PART 20 — COMMAND BREAKDOWN
+Command/Filter	Meaning
+whoami	Current Linux user
+ip addr	Network interfaces/IP addresses
+apt update	Update package information
+apt install hping3	Install Hping3
+hping3 --help	Hping3 help
+ping 127.0.0.1	Test local connectivity
+-c 5	Send 5 packets
+-S	Set SYN flag
+-p 80	Port 80
+127.0.0.1	Localhost
+tcp	TCP packets
+tcp.flags.syn == 1	SYN packets
+tcp.flags.reset == 1	RST packets
+tcp.port == 80	Port 80 traffic
