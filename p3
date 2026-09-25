@@ -1,0 +1,114 @@
+Step 1
+
+Open Wireshark.
+
+Step 2
+
+Look at the available interfaces.
+
+You'll usually see something similar to:
+
+Wi-Fi
+Ethernet
+Step 3
+
+Double-click the interface you are currently using.
+
+Wireshark will start capturing.
+
+You'll immediately start seeing rows appearing.
+While Wireshark is capturing, open Command Prompt.
+
+Run:
+
+ping 8.8.8.8
+
+You'll see something like:
+
+Reply from 8.8.8.8
+
+This creates ICMP traffic.
+
+Now go back to Wireshark.
+
+You'll see packets appearing.
+
+PART 7 — USE THE icmp FILTER
+
+At the top of Wireshark you'll find the display filter box.
+
+Enter:
+
+icmp
+
+Press Enter.
+
+Now Wireshark shows only ICMP packets.
+
+
+
+PART 8 — UNDERSTAND A PACKET
+
+Click one of the packets.
+
+Wireshark normally has three major sections:
+
+1. Packet List
+
+Top section.
+
+Shows packets such as:
+
+No.
+Time
+Source
+Destination
+Protocol
+Length
+Info
+2. Packet Details
+
+Middle section.
+
+Shows protocol information.
+
+You might see:
+
+Frame
+Ethernet II
+Internet Protocol Version 4
+Internet Control Message Protocol
+3. Packet Bytes
+
+Bottom section.
+
+Shows the raw packet data in hexadecimal/ASCII form.
+
+So visually:
+
+┌─────────────────────────────┐
+│       Packet List           │
+├─────────────────────────────┤
+│       Packet Details        │
+├─────────────────────────────┤
+│       Packet Bytes          │
+└─────────────────────────────┘
+PART 9 — UNDERSTAND TCP PACKETS
+
+Now clear the icmp filter.
+
+You can click the X beside the filter box.
+
+Then enter:
+
+tcp
+
+Press Enter.
+
+Now you're seeing TCP packets.
+
+TCP = Transmission Control Protocol
+
+TCP provides reliable communication between devices.
+
+PART 10 — TCP THREE-W
